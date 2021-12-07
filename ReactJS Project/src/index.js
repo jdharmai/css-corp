@@ -1,6 +1,12 @@
-import {a} from './app'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-console.log(a);
-
-const a =5;
-a=10;
+ReactDOM.render(
+  <div>
+    <h1>Hello from React</h1>
+    <input type="checkbox" />
+    <App title="Good Morning" />
+  </div>,
+  document.getElementById('root')
+);

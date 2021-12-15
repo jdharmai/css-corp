@@ -1,23 +1,19 @@
+// eslint-disable-next-line no-undef
 module.exports = {
-"env": {
-    "browser": true,
-    "es2021": true
-},
-parser: "@babel/eslint-parser",
-"extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 13,
-        "sourceType": "module"
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  parser: '@babel/eslint-parser',
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  parserOptions: {
+    requireConfigFile: false,
+    ecmaFeatures: {
+      jsx: true,
     },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-    }
+    ecmaVersion: 13,
+    sourceType: 'module',
+  },
+  plugins: ['react'],
+  rules: {},
 };

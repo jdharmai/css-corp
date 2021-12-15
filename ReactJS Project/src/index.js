@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Fragment } from "react";
+
+const App = () => {
+    return <h1>Hello from functional component</h1>
+};
 
 ReactDOM.render(
-  <div>
-    <h1>Hello from React</h1>
-    <input type="checkbox" />
-    <App title="Good Morning" />
-  </div>,
-  document.getElementById('root')
-);
+    <Fragment>
+        <h1>Hello from ReactJS Tutorial</h1>
+        <App/>
+    </Fragment>,
+    document.getElementById("root"),
+)

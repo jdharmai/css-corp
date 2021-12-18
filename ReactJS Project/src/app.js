@@ -12,13 +12,29 @@ class App extends React.Component{
     //     caption: "I am from static default props"
     // }
 
+    state = {
+        i: 0,
+    }
+    incrementCounter = () => {
+        // const {i} = this.state;
+        // this.setState({
+        //     i: i + 1,
+        // })
+        this.setState(({i}) => ({
+            i: i + 1,
+        }));
+    }
+
     render() {
         const {title, caption} = this.props;
+        const {i} = this.state;
         return (
             <>
                 <h1>{title}</h1>
                 <h2>{caption}</h2>
                 <UserInfo firstname="Jagan" lastname="Prabu"/>
+                <p>{i}</p>
+                <button type="button" onClick={this.incrementCounter}>Increment button</button>
             </>
         )
     }

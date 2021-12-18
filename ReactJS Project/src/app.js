@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import UserInfo from "./UserInfo";
 
 class App extends React.Component{
     // static PropTypes = {
@@ -17,6 +18,7 @@ class App extends React.Component{
             <>
                 <h1>{title}</h1>
                 <h2>{caption}</h2>
+                <UserInfo firstname="Jagan" lastname="Prabu"/>
             </>
         )
     }

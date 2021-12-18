@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import { Fragment } from "react";
+import App from "./App.js"
 
 // const App = ({title, caption}) => {
 //     return (
@@ -14,17 +14,6 @@ import { Fragment } from "react";
 //     )    
 // };
 
-class App extends Component{
-    render() {
-        const {title, caption} = this.props;
-        return (
-            <>
-                <h1>{title}</h1>
-                <h2>{caption}</h2>
-            </>
-        )
-    }
-}
 
 ReactDOM.render(
     <>

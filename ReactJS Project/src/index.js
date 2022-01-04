@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App.js"
+import Todo from "./Pages/Todo";
+import "./root.css";
 
 // const App = ({title, caption}) => {
 //     return (
@@ -16,10 +17,6 @@ import App from "./App.js"
 
 
 ReactDOM.render(
-    <>
-        <h1>Hello from ReactJS Tutorial</h1>
-        <input type="text"/>
-        <App title="Good morning" caption="Have a nice day"/>
-    </>,
+    <Todo name="Todo App"/>,
     document.getElementById("root"),
 )
